@@ -282,12 +282,21 @@ header .cart{
     -o-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
   }
+    @media(max-width: 991px){
+      .ico_1:hover:before,
+      .ico_2:hover:before,
+      .ico_3:hover:before{
+        bottom: inherit;
+        top: -48px;
+      }
+    }
     .about_product .ico:before{
       display: none;
       position: absolute;
-      bottom: -50px;
+      bottom: -48px;
       left: 0;
       width: 100%;
+
       color: #008efe;
     }
   .ico_1{
@@ -403,29 +412,105 @@ header .cart{
   }
 /* contact us */
 
+.contact_us{}
+  .contact_us form{
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  .contact_us input,
+  .contact_us textarea{
+    width: 100%;
+    
+    font-family: Karla-Bold, sans-serif;
+    color: #008efe;
+    font-size: 28pt;
+  }
+    .contact_us input:focus,
+    .contact_us textarea:focus{
+      box-shadow: none;
+      outline: none;
+    }
+
+  ::-webkit-input-placeholder {color:#008efe;}
+  ::-moz-placeholder          {color:#008efe;}
+  :-moz-placeholder           {color:#008efe;}
+  :-ms-input-placeholder      {color:#008efe;}
+
+  .contact_us input{
+    margin-top: 7px;
+    padding: 8px 20px;
+
+    border: none;
+    border-bottom: 5px solid #008efe;
+
+    -webkit-transition: background .3s ease-in-out;
+    -o-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+  }
+    .contact_us input:focus{
+      background: #008efe;
+      color: #fff;
+    }
+  .contact_us textarea{
+    padding: 8px;
+    border: 5px solid #008efe;
+  }
+  .contact_us button{
+    margin-top: 50px;
+    padding: 17px 50px;
+  
+    font-size: 28pt;
+    border: none;
+    background: #008efe;
+    color: #fff;
+  }
+
 /* pre footer */
 .pre_footer{
+  padding: 100px 0 50px;
+  margin-bottom: 50px;
+
   background: #008efe;
   color: #fff;
-
   text-align: center;
 }
   .pre_footer .btn{
     display: inline-block;
     margin-left: 15px;
-
+    border: 3px solid transparent;
+    
+    padding: 20px 0px;
     font-size: 36pt;
+    width: 350px;
+
+    -moz-border-top-left-radius: 50px;
+    -webkit-border-top-left-radius: 50px;
+    border-top-left-radius: 50px;
+    -moz-border-bottom-left-radius: 50px;
+    -webkit-border-bottom-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    -moz-border-top-right-radius: 50px;
+    -webkit-border-top-right-radius: 50px;
+    border-top-right-radius: 50px;
+    -moz-border-bottom-right-radius: 50px;
+    -webkit-border-bottom-right-radius: 50px;
+    border-bottom-right-radius: 50px;
   }
+    .pre_footer .btn:hover{
+      text-decoration: none;
+    }
     .pre_footer .order{
       color: #008efe;
       background: #fff;
     }
     .pre_footer .faq{
       color: #fff;
-      border: 1px solid #008efe;
+      border: 3px solid #fff;
     }
 
   .pre_footer p{
+    margin-top: 50px;
+
     font-size: 26pt;
   }
 
@@ -439,5 +524,36 @@ footer{
     display: inline-block;
     margin: 0 5px;
 
+    background: url('images/footer_soc.jpg') no-repeat 0 0;
     color: #747474;
+    height: 25px;
+    width: 35px;
+  }
+    footer a.footer_fb{
+      background-position: 13px -1px;
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+    footer a.footer_tw{
+      background-position: -41px 2px;
+      -webkit-background-size: cover;
+      background-size: cover; 
+    }
+    footer a.footer_gplus{
+      background-position: -99px 0;
+      -webkit-background-size: cover;
+      background-size: cover;  
+    }
+    footer a.footer_pinterest{
+      background-position: -150px 1px;
+      -webkit-background-size: cover;
+      background-size: cover; 
+    }
+    footer a.footer_mail{
+      background-position: -204px 2px;
+      -webkit-background-size: cover;
+      background-size: cover; 
+    }
+  footer p{
+    margin-top: 25px;
   }
