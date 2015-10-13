@@ -1,4 +1,25 @@
 $(document).ready(function() {
+
+  $('#slideshow').fadeSlideShow({
+    width: '100%',
+    height: 600,
+    speed: 'slow', // default animation transition speed
+    interval: 3000, // default interval between image change
+    PlayPauseElement: '', // default css id for the play / pause element
+    PlayText: '', // default play text
+    PauseText: '', // default pause text
+    NextElement: '', // default id for next button
+    NextElementText: '', // default text for next button
+    PrevElement: '', // default id for prev button
+    PrevElementText: '', // default text for prev button
+    ListElement: '', // default id for image / content controll list
+    ListLi: '', // default class for li's in the image / content controll 
+    ListLiActive: '', // default class for active state in the controll list
+    addListToId: false, // add the controll list to special id in your code - default false
+    allowKeyboardCtrl: true, // allow keyboard controlls left / right / space
+    autoplay: true // autoplay the slideshow
+  });
+
   // обрабатываем каждый слайдер  
   $(".slider").each(function () { 
     var obj = $(this);

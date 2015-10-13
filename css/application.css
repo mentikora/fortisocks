@@ -130,7 +130,7 @@ header .cart{
 
 /* big blue section title */
 .section_title{
-  padding: 150px 0;
+  padding: 100px 0;
 
   background: #008efe;
   color: #ffffff;
@@ -268,6 +268,45 @@ header .cart{
 .about_product{
   margin-bottom: 100px;
 }
+  /* slider */
+  #slideshowWrapper{
+    margin-top: 50px;
+    position:relative;
+  }
+  #slideshow{
+    list-style:none;
+    padding: 2px;
+    width: 100% !important;
+    min-height: 600px;
+    overflow:hidden;
+  }
+    #slideshow li {
+      width: 100% !important;
+
+      background: #fff;
+      text-align: left;
+      font-size: 21pt;
+      color: #252525;
+    }
+    #slideshow p{
+      position: relative;
+      padding: 40px 0 0 40px;
+    }
+    #slideshow span{
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      border-radius: 50%;
+
+      border: 3px solid #008efe;
+      color: #008efe;
+    }
+
+  /* ico's */
   .about_product .ico_wr{
     margin-top: 100px;
   }
@@ -607,10 +646,9 @@ footer{
     height: 15px;
     background-color: #bcbec0;
     font-size:0;
-    margin: 6px;
+    margin: 6px 10px;
     cursor:pointer;
     border-radius: 50%;
-    margin: 0 8px 0 0;
     cursor: pointer;
     overflow: hidden;
     float: left;
