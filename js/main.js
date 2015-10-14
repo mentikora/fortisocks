@@ -1,5 +1,23 @@
 $(document).ready(function() {
 
+  // navbar button show
+  $('.navbar_button').on('click', function(){
+    $(this).toggleClass('open');
+    if ( $(this).hasClass('open') ) {
+      $('.nav_menu').css('display', 'block');
+      $('.cart').css('display', 'none');
+    } else {
+      $('.nav_menu').css('display', 'none');
+      $('.cart').css('display', 'block');
+    }
+  });
+
+  // menu click sliding 
+  $('.nav_menu a').on('click', function(){
+    var link = $(this).data('target');
+    $('html,body').animate({scrollTop: $('#' +link).offset().top}, 'slow');
+  });
+
   $('#slideshow').fadeSlideShow({
     width: '100%',
     height: 600,
