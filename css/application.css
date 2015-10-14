@@ -90,6 +90,7 @@ table {
   border-spacing: 0;
 }
 a:hover,
+a:focus,
 button:hover{
   text-decoration: none;
 }
@@ -559,6 +560,38 @@ header .cart{
 /* contact us */
 
 .contact_us{}
+  /**/
+  .show_hidden_contacts{
+    cursor: pointer;
+    font-size: 20pt;
+    color: #848484;
+  }
+  .hidden_contacts{
+    display: none;
+    margin-top: 30px;
+
+    text-align: left;
+    font-size: 18pt;
+  }
+    .hidden_contacts.open{
+      display: block;
+    }
+    .hidden_contacts p{
+      color: #848484;
+      margin-bottom: 15px;
+    }
+      .hidden_contacts p.post{
+        margin-top: 30px;
+      }
+    .hidden_contacts a{
+      color: #008efe;
+      font-family: Karla-Bold, sans-serif;
+    }
+    .hidden_contacts span{
+      color: #494949;
+    }
+
+  /**/
   .contact_us form{
     margin-top: 100px;
     margin-bottom: 50px;

@@ -21,6 +21,12 @@ $(document).ready(function() {
     $('html,body').animate({scrollTop: $('#' +link).offset().top}, 'slow');
   });
 
+  // show hidden contacts
+  $('.show_hidden_contacts').on('click', function(){
+    $('.hidden_contacts').toggleClass('open');
+  });
+
+  // about product slider
   $('#slideshow').fadeSlideShow({
     width: '100%',
     height: 600,
