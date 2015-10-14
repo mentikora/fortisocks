@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+  // ini fake select
+  $('.fake-select').fakeSelect();
+
   // navbar button show
   $('.navbar_button').on('click', function(){
     $(this).toggleClass('open');

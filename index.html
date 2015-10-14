@@ -15,7 +15,10 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/application.css" rel="stylesheet">
     <link href="css/ninja-slider.css" rel="stylesheet">
+
     <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/fake-select.js" type="text/javascript"></script>
     <script src="js/fadeSlideShow.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
     <script src="js/ninja-slider.js" type="text/javascript"></script>
@@ -352,12 +355,16 @@
           <div class="col-md-3 col-md-offset-1">
             <input type="text" placeholder="Name">
             <input type="text" placeholder="Email">
-            <input type="text" placeholder="Enquiry">
+            <select name="" id="" class="fake-select">
+              <option value="1">Enquiry</option>
+              <option value="2">Sales / Commercial</option>
+              <option value="3">General Enquiry</option>
+            </select>
             <input type="text" placeholder="Subject">
           </div>
           <div class="col-md-8">
             <textarea name="" id="" cols="30" rows="7"></textarea>
-            <button class="pull-right">Send Message</button>
+            <button class="pull-right send">Send Message</button>
           </div>
         </form>
       </section>

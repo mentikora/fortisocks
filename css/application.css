@@ -564,25 +564,54 @@ header .cart{
     margin-bottom: 50px;
   }
   .contact_us input,
-  .contact_us textarea{
+  .contact_us textarea,
+  .fake-select-wrap,
+  .fake-select-mask,
+  .fake-select-mask button{
     width: 100%;
     
     font-family: Karla-Bold, sans-serif;
     color: #008efe;
     font-size: 28pt;
+    background-color: #fff;
+    text-align: left;
   }
     .contact_us input:focus,
     .contact_us textarea:focus{
       box-shadow: none;
       outline: none;
     }
+  .fake-select-wrap .caret{
+    display: none;
+  }
+  .fake-select-mask button{
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .fake-select-mask .dropdown-menu{
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+  }
+    .fake-select-mask .dropdown-menu a{
+      background: #008efe;
+      color: #fff;
+      font-size: 15pt;
+    }
+      .fake-select-mask .dropdown-menu a:hover{
+        background: #def0fc;
+        color: #008efe;
+      }
 
   ::-webkit-input-placeholder {color:#008efe;}
   ::-moz-placeholder          {color:#008efe;}
   :-moz-placeholder           {color:#008efe;}
   :-ms-input-placeholder      {color:#008efe;}
 
-  .contact_us input{
+  .contact_us input,
+  .fake-select-mask button{
     margin-top: 7px;
     padding: 8px 20px;
 
@@ -594,14 +623,13 @@ header .cart{
     transition: background .3s ease-in-out;
   }
     .contact_us input:focus{
-      background: #008efe;
-      color: #fff;
+      background: #def0fc;
     }
   .contact_us textarea{
     padding: 8px;
     border: 5px solid #008efe;
   }
-  .contact_us button{
+  .contact_us .send{
     margin-top: 50px;
     padding: 17px 50px;
   
