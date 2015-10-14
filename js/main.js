@@ -26,6 +26,11 @@ $(document).ready(function() {
     $('.hidden_contacts').toggleClass('open');
   });
 
+  // faq popUp
+  $('.faq_title').on('click', function(){
+    $(this).parent('li').toggleClass('active')
+  });
+
   // about product slider
   $('#slideshow').fadeSlideShow({
     width: '100%',

@@ -557,8 +557,8 @@ header .cart{
 
     background: #fafafa;
   }
-/* contact us */
 
+/* contact us */
 .contact_us{}
   /**/
   .show_hidden_contacts{
@@ -664,11 +664,11 @@ header .cart{
   }
   .contact_us .send{
     margin-top: 50px;
-    padding: 17px 50px;
-  
+    padding: 17px 150px 17px 50px;
+    
     font-size: 28pt;
     border: none;
-    background: #008efe;
+    background: #008efe url('images/button_send_arrow.jpg') no-repeat 90% 50%;
     color: #fff;
   }
 
@@ -711,6 +711,7 @@ header .cart{
       background: #fff;
     }
     .pre_footer .faq{
+      background: #008efe;
       color: #fff;
       border: 3px solid #fff;
     }
@@ -720,6 +721,49 @@ header .cart{
 
     font-size: 26pt;
   }
+  /* faq modal stylize*/
+  .modal-content{
+    border-radius: 0;
+  }
+  .modal-header{
+    border-bottom: none;
+  }
+  .modal-body{
+    text-align: left;
+  }
+    .modal-body ul{}
+    .modal-body li{
+      padding: 20px 10px 20px 50px;
+
+      border-bottom: 1px solid #747474;
+    }
+      .modal-body li:last-child{
+        border-bottom: none;
+      }
+      .modal-body li.active p{
+        display: block;
+      }
+      .modal-body li.active .faq_title{
+
+      }
+    .modal-body .faq_title{
+      display: block;
+      padding-right: 50px;
+      
+      cursor: pointer;
+      color: #008efe;
+      font-size: 20pt;
+    }
+    .modal-body p{
+      display: none;
+      margin-top: 20pt;
+
+      font-size: 15pt;
+    }
+    .modal-body p > span{
+      text-decoration: underline;
+      font-weight: bold;
+    }
 
 /* footer */
 footer{
