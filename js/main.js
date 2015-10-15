@@ -5,7 +5,8 @@ $(document).ready(function() {
     activeClass: 'active',
     controls: false,
     pause: 8000,
-    pagerClass: 'pager'
+    pagerClass: 'pager',
+    transition: 'fade'
   });
 
   // ini about slider

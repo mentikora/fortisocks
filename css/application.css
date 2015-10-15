@@ -354,7 +354,7 @@ header .cart{
     position: absolute;
     text-align: center;
     width: 400px;
-    right: 25px;
+    right: 10%;
     z-index: 10;
   }
     .slider_top .slide_tooltip_boots{
