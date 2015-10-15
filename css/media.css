@@ -1,0 +1,39 @@
+@media(max-width: 991px){
+	.instagram .title a{
+    margin-left: 0;
+  }
+  header .nav_menu{
+    position: absolute;
+    top: 57px;
+  }
+  .show_hidden_contacts,
+  textarea,
+  .pre_footer .faq{
+    margin-top: 15px;
+  }
+  .contact_us .send{
+    float: none !important;
+  }
+}
+
+
+@media(max-width: 767px){
+  /* header */
+  .logo{
+    margin: 0 auto;
+  }
+  
+  header .cart{
+    float: none !important;
+  }
+  /* feedback slider*/
+  .slider ul{
+    width: auto !important;
+  }
+  #feedback_slider .nav{
+    display: none;
+  }
+  .feedback_title span{
+    border-bottom: none !important;
+  }
+}
