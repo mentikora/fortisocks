@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+  // ini top slider
+  $('#slippry-top').slippry({
+    activeClass: 'active',
+    controls: false,
+    pause: 8000,
+    pagerClass: 'pager'
+  });
+
   // ini fake select
   $('.fake-select').fakeSelect();
 
@@ -20,7 +28,7 @@ $(document).ready(function() {
     var link = $(this).data('target');
     $('html,body').animate({scrollTop: $('#' +link).offset().top}, 'slow');
   });
-
+    
   // show hidden contacts
   $('.show_hidden_contacts').on('click', function(){
     $('.hidden_contacts').toggleClass('open');
@@ -28,7 +36,7 @@ $(document).ready(function() {
 
   // faq popUp
   $('.faq_title').on('click', function(){
-    $(this).parent('li').toggleClass('active')
+    $(this).parent('li').toggleClass('active');
   });
 
   // about product slider
