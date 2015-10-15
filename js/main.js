@@ -8,6 +8,13 @@ $(document).ready(function() {
     pagerClass: 'pager'
   });
 
+  // ini about slider
+  $('#slippry-about').slippry({
+    activeClass: 'active',
+    pause: 8000,
+    pager: false
+  });
+
   // ini fake select
   $('.fake-select').fakeSelect();
 
@@ -31,6 +38,7 @@ $(document).ready(function() {
     
   // show hidden contacts
   $('.show_hidden_contacts').on('click', function(){
+    $(this).toggleClass('active');
     $('.hidden_contacts').toggleClass('open');
   });
 

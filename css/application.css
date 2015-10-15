@@ -246,7 +246,7 @@ header .cart{
 
 /* big blue section title */
 .section_title{
-  padding: 100px 0;
+  padding: 80px 0;
 
   background: #008efe;
   color: #ffffff;
@@ -597,7 +597,27 @@ header .cart{
     }
 
 /* about us*/
-.about_us{}
+.about_us{
+}
+  .about_slider_wr{
+    height: 600px;
+    margin-top: 50px;
+  }
+  /* about slider stylize*/
+  #slippry-about ul{
+    height: 100%;
+    /*margin: 50px 0;*/
+  }
+    #slippry-about p{
+      position: absolute;
+      z-index: 10;
+      
+      top: 40%;
+      left: 25px;
+      color: #008efe;
+      font-size: 56pt;
+    }
+  /**/
   .about_us .story{
     text-align: left;
     text-transform: uppercase;
@@ -613,7 +633,7 @@ header .cart{
 
 /* instagram */
 .instagram{
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
   .instagram .title{
@@ -651,13 +671,24 @@ header .cart{
 .contact_us{}
   /**/
   .show_hidden_contacts{
+    display: inline-block;
+    padding-right: 50px;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    
     cursor: pointer;
     font-size: 20pt;
     color: #848484;
+    text-align: left;
+    background: url('images/plus.png') no-repeat right 50%;
   }
+    .show_hidden_contacts.active{
+      background: url('images/minus.png') no-repeat right 50%;   
+    }
   .hidden_contacts{
     display: none;
-    margin-top: 30px;
+    margin-top: 70px;
 
     text-align: left;
     font-size: 18pt;
@@ -671,6 +702,7 @@ header .cart{
     }
       .hidden_contacts p.post{
         margin-top: 30px;
+        margin-bottom: 0;
       }
     .hidden_contacts a{
       color: #008efe;
