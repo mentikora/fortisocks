@@ -989,14 +989,12 @@ header .cart{
     margin-top: 40px;
     padding: 8px 0;
   }
-header .cart:hover
-
-{
+header .cart:hover{
 	background:url(../img/carthover.png)  no-repeat scroll 0px 0px / cover;
 	width:45px;
 	height:45px;
-	     transition-duration: 0.3s;
-    transition-property: background;
+  transition-duration: 0.3s;
+  transition-property: background;
 }
 .buy:hover {
     background-color: #FFF;
