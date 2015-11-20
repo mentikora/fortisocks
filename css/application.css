@@ -162,10 +162,10 @@ body{
 
 /* header */
 header{
-  padding: 22px 40px;
+  padding: 6px 65px;
   width: 100%;
   position: fixed;
-  background: #F0F0F0;
+  background: #f6f6f6;
   z-index: 99999999;
 
 }
@@ -175,14 +175,15 @@ header{
 }
   header .logo{
     display: block;
-    width: 250px;
+    width: 217px;
+    height: 45px;
   }
   header .navbar_button{
-    width: 60px;
-    height: 45px;
+    width: 29px;
+    height: 18px;
     position: relative;
-    margin-top: 12px;
-    margin-left: 30px;
+    margin-top: 14px;
+    margin-left: 45px;
     z-index: 2;
 
     background-color: transparent;
@@ -202,13 +203,12 @@ header{
     header .navbar_button span{
       display: block;
       position: absolute;
-      height: 6px;
+      height: 3px;
       width: 100%;
       opacity: 1;
       left: 0;
 
       background: #008efe;
-      border-radius: 3px;
       
       -webkit-transform: rotate(0deg);
       -moz-transform: rotate(0deg);
@@ -224,15 +224,15 @@ header{
       }
 
       header .navbar_button span:nth-child(2) {
-        top: 18px;
+        top: 7px;
       }
 
       header .navbar_button span:nth-child(3) {
-        top: 36px;
+        top: 14px;
       }
 
       header .navbar_button.open span:nth-child(1) {
-        top: 18px;
+        top: 7px;
 
         -webkit-transform: rotate(135deg);
         -moz-transform: rotate(135deg);
@@ -246,7 +246,7 @@ header{
       }
 
       header .navbar_button.open span:nth-child(3) {
-        top: 18px;
+        top: 7px;
 
         -webkit-transform: rotate(-135deg);
         -moz-transform: rotate(-135deg);
@@ -261,7 +261,7 @@ header{
   }    
     header .nav_menu li{
       display: inline-block;
-      padding: 25px 10px 0;
+      padding: 13px 10px 0;
 
 
       font-size: 15pt;
@@ -271,7 +271,6 @@ header .cart{
   display: block;
   width: 45px;
   height: 45px;
-  margin-top: 10px;
 
   background: url('images/cart.png') no-repeat 0 0;
   -webkit-background-size: cover;
@@ -285,18 +284,15 @@ header .cart{
 
 /* big blue section title */
 .section_title{
-  padding: 80px 0;
+  padding: 51px 0;
+  border-bottom: 1px solid #fff;
+  text-decoration: underline;
 
   background: #008efe;
   color: #ffffff;
   text-align: center;
+  font-size: 28px;
 }
-  .section_title span{
-    padding-bottom: 20px;
-
-    font-size: 28pt;
-    border-bottom: 1px solid #fff;
-  }
 
 /* slider top */ 
 .slider_top{
@@ -497,13 +493,10 @@ header .cart{
     display: inline-block;
     margin-bottom: 75px;
 
-    font-size: 28pt;
+    font-size: 28px;
     color: #008efe;
+    border-bottom: 1px solid #008efe;
   }
-    .feedback .feedback_title span{
-      border-bottom: 1px solid #008efe;
-      padding-bottom: 25px;
-    }
   
   /* feedback slider*/
   #feedback_slider{
@@ -513,24 +506,24 @@ header .cart{
       margin-bottom: 25px;
     }
       #feedback_slider .name{
-        font-size: 29px;
-        font-family: Karla-bold, sans-serif;
+        font-size: 32px;
+        font-family: Karla-Bold, sans-serif;
         color: #595959;
         padding: 24px 0 0;
         font-weight: 100;
       }
       #feedback_slider .position{
-        font-size: 23px;
-        font-family: Karla-Regular, sans-serif;
+        font-size: 24px;
+        font-family: Karla-Italic, sans-serif;
         color: #595959;
         line-height: 30px;
         font-weight: bold;
       }
       #feedback_slider .type{
-        font-size: 16px;
+        font-size: 18px;
         color: #848484;
         line-height: 22px;
-        font-family: Karla-Bold, sans-serif;
+        font-family: Karla-Regular, sans-serif;
       }
     #feedback_slider img{
       height: 200px;
@@ -543,32 +536,33 @@ header .cart{
       color: #595959;
     }
       #feedback_slider .right div{
-       padding: 50px;
-        background: #eaeaea;
+        padding: 50px;
         position: relative;
         vertical-align: top;
-        font-size:19px ;
-        line-height: 25px;
         display: block;
-        text-align: justify;
 
-       /* box-shadow: 0 0 6px #B2B2B2;*/  
+        background: #eaeaea;
+        font-size: 22px;
+        line-height: 25px;
+        /*text-align: justify; */
+        color: #595959; 
+        text-align: center;
+        font-family: Karla-Regular, sans-serif;
       }
         #feedback_slider .right div:before{
           content: "\00a0";
-    display: block;
-    height: 61px;
-    position: absolute;
-    top: 15px;
-    transform: rotate( 29deg ) skew( -35deg );
-    -moz-transform: rotate( 29deg ) skew( -35deg );
-    -ms-transform: rotate( 29deg ) skew( -35deg );
-    -o-transform: rotate( 29deg ) skew( -35deg );
-    -webkit-transform: rotate( 29deg ) skew( -35deg );
-    width: 47px;
-    background-color: #eaeaea;
-    /*box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );*/
-    left: -8px;
+          display: block;
+          height: 61px;
+          position: absolute;
+          top: 15px;
+          transform: rotate( 29deg ) skew( -35deg );
+          -moz-transform: rotate( 29deg ) skew( -35deg );
+          -ms-transform: rotate( 29deg ) skew( -35deg );
+          -o-transform: rotate( 29deg ) skew( -35deg );
+          -webkit-transform: rotate( 29deg ) skew( -35deg );
+          width: 47px;
+          background-color: #eaeaea;
+          left: -8px;
         }
   .slider {
     z-index: 9;
@@ -616,27 +610,38 @@ header .cart{
   /* feedback order button styles*/
   .feedback .order_btn{
     display: inline-block;
-    padding: 10px 30px;
-    
-    font-size: 24pt;
+    width: 342px;
+    height: 82px;
+    line-height: 82px;
+
+    background-color: #008efd;
+    font-size: 36px;
     text-align: center;
     color: #fff;
-    background: #008efe;
+    text-transform: uppercase;
     vertical-align: middle;
+    font-family: Karla-Bold, sans-serif;
     
-    -moz-border-top-left-radius: 35px;
-    -webkit-border-top-left-radius: 35px;
-    border-top-left-radius: 35px;
-    -moz-border-bottom-left-radius: 35px;
-    -webkit-border-bottom-left-radius: 35px;
-    border-bottom-left-radius: 35px;
-    -moz-border-top-right-radius: 35px;
-    -webkit-border-top-right-radius: 35px;
-    border-top-right-radius: 35px;
-    -moz-border-bottom-right-radius: 35px;
-    -webkit-border-bottom-right-radius: 35px;
-    border-bottom-right-radius: 35px;
+    -moz-border-top-left-radius: 40px;
+    -webkit-border-top-left-radius: 40px;
+    border-top-left-radius: 40px;
+    -moz-border-bottom-left-radius: 40px;
+    -webkit-border-bottom-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    -moz-border-top-right-radius: 40px;
+    -webkit-border-top-right-radius: 40px;
+    border-top-right-radius: 40px;
+    -moz-border-bottom-right-radius: 40px;
+    -webkit-border-bottom-right-radius: 40px;
+    border-bottom-right-radius: 40px;
   }
+    .feedback .order_btn span{
+      display: inline-block;
+      width: 33px;
+      height: 24px;
+
+      background: url("images/ico_cart.png") 0 0 no-repeat;
+    }
 
 /* about product */
 .about_product{
@@ -802,30 +807,40 @@ header .cart{
   }
     .about_us .story .title{
       color: #bcbec0;
-      font-size: 43pt;
+      font-size: 43px;
+      font-family: Karla-Bold, sans-serif;
+
+      margin-bottom: 35px;
     }
     .about_us .story .text{
       color: #848484;
-      font-size: 20pt;
+      font-size: 20px;
     }
 
 /* instagram */
 .instagram{
   padding-top: 30px;
   padding-bottom: 30px;
+  
+  background: #f5f5f5;
 }
   .instagram .title{
-    color: #bcbec0;
-    font-size: 43pt;
+    color: #949494;
+    font-size: 31px;
+    line-height: 36px;
     font-family: Karla-Bold, sans-serif;
   }
+    .instagram .title > span {
+      position: relative;
+      top: 2px;
+    }
     .instagram .title a{
       display: inline-block;
-      padding: 5px 20px;
+      padding: 0px 15px;
       margin-left: 40px;
       
       font-family: Karla-Regular, sans-serif;
-      font-size: 25pt;
+      font-size: 20px;
       color: #008efe;
       border: 2px solid #008efe;
 
@@ -833,7 +848,7 @@ header .cart{
       -webkit-border-radius: 10px;
       border-radius: 10px;
     }
-      .instagram .title span{
+      .instagram .title a span{
         font-family: Karla-Bold, sans-serif;
         color: #008efe;
         text-transform: uppercase;
@@ -841,8 +856,6 @@ header .cart{
   .instagram_promo{
     margin-top: 40px;
     padding: 8px 0;
-
-    background: #fafafa;
   }
 header .cart:hover
 
