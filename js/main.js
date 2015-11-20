@@ -74,7 +74,7 @@ $.ajax({
   // about product slider
   $('#slideshow').fadeSlideShow({
     width: '100%',
-    height: 600,
+    height: 500,
     speed: 'slow', // default animation transition speed
     interval: 3000, // default interval between image change
     PlayPauseElement: '', // default css id for the play / pause element

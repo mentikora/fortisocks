@@ -171,7 +171,7 @@ header{
 }
 .sy-box {
     height: 100%;
-    margin-top: 5%;
+    /*margin-top: 5%;*/
 }
   header .logo{
     display: block;
@@ -649,15 +649,14 @@ header .cart{
 }
   /* slider */
   #slideshowWrapper{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    position:relative;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    position: relative;
   }
   #slideshow{
     list-style:none;
-    padding: 2px;
     width: 100% !important;
-    min-height: 600px;
+    min-height: 500px;
     overflow:hidden;
   }
     #slideshow li {
@@ -665,25 +664,34 @@ header .cart{
 
       background: #fff;
       text-align: left;
-      font-size: 21pt;
-      color: #252525;
+      font-size: 21px;
+      color: #232323;
     }
+      #slideshow li .col-md-4{
+        padding-right: 0;
+      }
+      #slideshow li .col-md-8{
+        padding-left: 0;
+      }
     #slideshow p{
       position: relative;
-      padding: 40px 0 0 40px;
+      padding: 10px 0 30px 61px;
     }
     #slideshow span{
       position: absolute;
       display: block;
       top: 0;
       left: 0;
-      width: 40px;
-      height: 40px;
+      width: 51px;
+      height: 51px;
+      line-height: 45px;
       text-align: center;
       border-radius: 50%;
 
       border: 3px solid #008efe;
       color: #008efe;
+      font-size: 30px;
+      font-family: Karla-Bold, sans-serif;
     }
 
   /* ico's */
@@ -691,8 +699,8 @@ header .cart{
     margin-top: 100px;
   }
   .about_product .ico{
-    width: 150px;
-    height: 150px;
+    width: 115px;
+    height: 115px;
     position: relative;
     margin: 0 auto;
 
@@ -716,6 +724,8 @@ header .cart{
     }
   .ico_1{
     background: url('images/ico_1.png') no-repeat 0 0;
+    -webkit-background-size: cover;
+    background-size: cover;
   }
     .ico_1:hover:before{
       content: 'Reduces sweat';
@@ -723,56 +733,78 @@ header .cart{
     }
     .ico_1:hover{
       background: url('images/ico_1_hover.png') no-repeat 0 0;   
+      -webkit-background-size: cover;
+      background-size: cover;
     }
   .ico_2{
     background: url('images/ico_2.png') no-repeat 0 0;
+    -webkit-background-size: cover;
+    background-size: cover;
   }
     .ico_2:hover:before{
       content: 'Lightweight';
       display: block;
     }
     .ico_2:hover{
-      background: url('images/ico_2_hover.png') no-repeat 0 0;   
+      background: url('images/ico_2_hover.png') no-repeat 0 0;
+      -webkit-background-size: cover;
+      background-size: cover;   
     }
   .ico_3{
     background: url('images/ico_3.png') no-repeat 0 0;
+    -webkit-background-size: cover;
+    background-size: cover;
   }
     .ico_3:hover:before{
       content: 'Minimises heat';
       display: block;
     }
     .ico_3:hover{
-      background: url('images/ico_3_hover.png') no-repeat 0 0;   
+      background: url('images/ico_3_hover.png') no-repeat 0 0; 
+      -webkit-background-size: cover;
+      background-size: cover;  
     }
   .ico_4{
     background: url('images/ico_4.png') no-repeat 0 0;
+    -webkit-background-size: cover;
+    background-size: cover;
   }
     .ico_4:hover:before{
       content: 'Reduces discomfort';
       display: block;
     }
     .ico_4:hover{
-      background: url('images/ico_4_hover.png') no-repeat 0 0;   
+      background: url('images/ico_4_hover.png') no-repeat 0 0;  
+      -webkit-background-size: cover;
+      background-size: cover; 
     }
   .ico_5{
     background: url('images/ico_5.png') no-repeat 0 0;
+    -webkit-background-size: cover;
+    background-size: cover;
   }
     .ico_5:hover:before{
       content: 'Prevent friction';
       display: block;
     }
     .ico_5:hover{
-      background: url('images/ico_5_hover.png') no-repeat 0 0;   
+      background: url('images/ico_5_hover.png') no-repeat 0 0;  
+      -webkit-background-size: cover;
+      background-size: cover; 
     }
   .ico_6{
     background: url('images/ico_6.png') no-repeat 0 0;
+    -webkit-background-size: cover;
+    background-size: cover;
   }
     .ico_6:hover:before{
       content: 'Ultra-thin';
       display: block;
     }
     .ico_6:hover{
-      background: url('images/ico_6_hover.png') no-repeat 0 0;   
+      background: url('images/ico_6_hover.png') no-repeat 0 0;  
+      -webkit-background-size: cover;
+      background-size: cover; 
     }
 
 /* about us*/
@@ -780,22 +812,35 @@ header .cart{
 	overflow: hidden;
 }
   .about_slider_wr{
-    height: 600px;
-    margin-top: 0px;
+    height: 462px;
+    margin-top: 50px;
     text-align: left;
   }
   /* about slider stylize*/
   #slippry-about ul{
     height: 100%;
   }
-    #slippry-about p{
+    #slippry-about #one p{
       position: absolute;
       z-index: 10;
-      
-      top: 30%;
+      top: 40%;
       left: 100px;
+
       color: #008efe;
-      font-size: 56pt;
+      font-size: 56px;
+    }
+
+    #slippry-about #two img{
+      display: block;
+      margin: 20px auto 0;
+    }
+    #slippry-about #two p {
+      margin-top: 148px;
+
+      font-size: 20px;
+      color: #848484;
+      font-family: Karla-Regular, sans-serif;
+      line-height: 24px;
     }
 	.sy-controls {
 		top:-8%;
@@ -815,6 +860,7 @@ header .cart{
     .about_us .story .text{
       color: #848484;
       font-size: 20px;
+      line-height: 25px;
     }
 
 /* instagram */
@@ -1034,11 +1080,11 @@ top: 73%;
     font-size: 35px;
     width: 350px;
     height: 70px;
-	-moz-border-radius: 40px;
-	-o-border-radius: 40px;
-	-ms-border-radius: 40px;
-	-webkit-border-radius: 40px;
-      border-radius: 40px;
+  	-moz-border-radius: 40px;
+  	-o-border-radius: 40px;
+  	-ms-border-radius: 40px;
+  	-webkit-border-radius: 40px;
+    border-radius: 40px;
 
     /*-moz-border-top-left-radius: 40px;
     -webkit-border-top-left-radius: 40px;
@@ -1150,9 +1196,8 @@ top: 73%;
 
 /* footer */
 footer{
-  color: #747474;
   text-align: center;
-  font-size: 18pt;
+  padding-bottom: 100px;
 }
 
   footer a{
@@ -1170,4 +1215,12 @@ footer{
   
   footer p{
     margin-top: 25px;
+    font-size: 18px;
+    color: #58595b;
   }
+    footer p span{
+      color: #999999;
+
+      display: block;
+      margin-top: 10px;
+    }
