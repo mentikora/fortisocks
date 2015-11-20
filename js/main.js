@@ -19,6 +19,15 @@ $.ajax({
 });
 
 
+  // scrolled header
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    if (scroll >= $('#slider_top').outerHeight() - 20) {
+      $('header').removeClass('not_scrolled');
+    } else {
+      $('header').addClass('not_scrolled');
+    }
+  });
 
   // ini top slider
   $('#slippry-top').slippry({

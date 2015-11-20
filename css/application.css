@@ -161,6 +161,37 @@ body{
 }
 
 /* header */
+header.not_scrolled{
+  padding: 22px 65px;
+  background: none;
+}
+  header.not_scrolled .logo{
+    width: 250px;
+  }
+  header.not_scrolled .navbar_button{
+    width: 60px;
+    height: 45px;
+    margin-top: 4px;
+    margin-left: 60px;
+  }
+  header.not_scrolled .navbar_button span{
+    height: 3px;
+  }
+    header.not_scrolled .navbar_button span:nth-child(1) {
+      top: 0px;
+    }
+    header.not_scrolled .navbar_button span:nth-child(2) {
+      top: 18px;
+    }
+    header.not_scrolled .navbar_button span:nth-child(3) {
+      top: 36px;
+    }
+  header.not_scrolled .navbar_button.open span:nth-child(1),
+  header.not_scrolled .navbar_button.open span:nth-child(3) {
+    top: 18px;
+  }
+
+/* */
 header{
   padding: 6px 65px;
   width: 100%;
@@ -170,7 +201,7 @@ header{
 
 }
 #header.scrolled{
-  
+
 }
 .sy-box {
     height: 100%;
