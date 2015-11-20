@@ -1,19 +1,42 @@
 $(document).ready(function() {
 
+
+
+$(function() {
+
+$.ajax({
+    type: "GET",
+    dataType: "jsonp",
+    cache: false,
+    url: "https://api.instagram.com/v1/media/131324529876654234_1491525?client_id=afd15cca7d664a1c964d54bac0488b93",
+    success: function(data) {
+        for (var i = 0; i < 1; i++) {
+          console.log(data);
+            $("#pics").append("<img src='" + data.data.images.thumbnail.url+ "'></img>");
+        }
+    }
+});
+});
+
+
+
   // ini top slider
   $('#slippry-top').slippry({
     activeClass: 'active',
     controls: false,
     pause: 8000,
-    pagerClass: 'pager',
-    transition: 'fade'
+    pagerClass: 'pager'
   });
 
   // ini about slider
   $('#slippry-about').slippry({
     activeClass: 'active',
     pause: 8000,
-    pager: false
+	loop: false,
+	auto: false,
+	transition: 'horizontal',
+    pager: false,
+	continuous: false
   });
 
   // ini fake select
@@ -65,7 +88,7 @@ $(document).ready(function() {
     ListLi: '', // default class for li's in the image / content controll 
     ListLiActive: '', // default class for active state in the controll list
     addListToId: false, // add the controll list to special id in your code - default false
-    allowKeyboardCtrl: true, // allow keyboard controlls left / right / space
+    allowKeyboardCtrl: false, // allow keyboard controlls left / right / space
     autoplay: true // autoplay the slideshow
   });
 
@@ -105,3 +128,22 @@ $(document).on("click", ".slider .nav span", function() {
   sliderJS(obj, sl); 
   return false;
 });
+
+$(function() {
+	
+
+	$(".scroll").click(function(e) {
+		$.scrollify.instantMove("#home");
+	});
+
+	
+});
+
+$(function() {
+			$("body").jsgallery({
+				imgSelector : ".instagram_promo img", //default is img, ommit this property to use default
+		
+				bgClickClose : true
+			});
+		});
+

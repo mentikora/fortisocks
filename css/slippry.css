@@ -208,7 +208,7 @@
 
 /* next/ prev buttons, with arrows and clickable area a lot larger than the visible buttons */
 .sy-controls {
-  display: none;
+  display: block;
   list-style: none;
   height: 100%;
   width: 100%;
@@ -225,7 +225,12 @@
       left: 0;
       top: 0; }
       .sy-controls li.sy-prev a:after {
-        background-position: -5% 0; }
+		  background-image:url(../img/prev.png);
+		  display:block !important;
+		  opacity:1 !important;
+		  margin-left: 15px;
+		
+		}
     .sy-controls li.sy-next {
       right: 0;
       top: 0; }
@@ -244,7 +249,7 @@
         outline: none; }
       .sy-controls li a:after {
         content: "";
-        background-image: url("images/arrows.svg");
+        background-image:url(../img/next.png);
         background-repeat: no-repeat;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -256,16 +261,34 @@
         color: #111;
         font-weight: 800;
         position: absolute;
-        background-color: #fff;
-        width: 2.8em;
-        height: 2.8em;
+        width:64px;
+        height: 113px;;
         left: 50%;
         top: 50%;
         margin-top: -1.4em;
         margin-left: -1.4em;
+		-webkit-animation:3s arrow infinite ease;
+	animation:3s arrow infinite ease;
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%;
         border-radius: 50%; }
+		
+		@-webkit-keyframes arrow {
+	0%,100% {
+		left:10px;
+	}
+	50% {
+		left:30px;
+	}
+}
+@keyframes arrow {
+	0%,100% {
+		left:10px;
+	}
+	50% {
+		left:30px;
+	}
+}
   @media only screen and (max-device-width: 600px) {
     .sy-controls {
       display: block; }
