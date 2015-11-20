@@ -197,7 +197,8 @@ header{
   width: 100%;
   position: fixed;
   background: #f6f6f6;
-  z-index: 99999999;
+  z-index: 9999;
+  top: 0;
 
 }
 #header.scrolled{
@@ -333,7 +334,7 @@ header .cart{
   /* add relative for positioning slider navs */
   position: relative;
   height: 600px;
-  margin: 50px 0;
+  margin: 150px 0 50px;
 }
   .pager{
     position: absolute;
@@ -378,62 +379,75 @@ header .cart{
   li.active .top_slide_material{
     opacity: 1;
   }
-  .top_slide_line{
-
-  }
-  .top_slide_material{
-
-  }
   /* slide text stylize*/
   .slider_top p{
-    font-size: 28pt;
+    font-size: 28px;
     color: #008efe;
   }
   .slider_top .slide_tooltip{
-    position: absolute;
     text-align: center;
-    width: 550px;
-    right: 25px;
-    z-index: 10;
   }
-    .slider_top .slide_tooltip_boots{
-      top: 10%;
+    .slider_top .image_section{
+      float: left;
+      width: 50%;
     }
-    .slider_top .slide_tooltip_price{
-      bottom: 10%;
+      .slider_top .image_section img{
+        margin: 0 auto;
+        display: block;
+      }
+
+    .slider_top .text_section{
+      position: absolute;
+      bottom: 45px;
+      left: 40%;
+      width: 520px;
+      z-index: 10;
     }
+      .slider_top .text_section .btn_buy{
+        display: inline-block;
+        margin-top: 15px;
+        width: 340px;
+        height: 82px;
+
+        text-transform: uppercase;
+        color: #fff;
+        background: #008efe;
+        text-align: center;
+        line-height: 82px;
+        font-size: 37px;
+        font-family: Karla-Bold, sans-serif;
+
+        -moz-border-top-left-radius: 40px;
+        -webkit-border-top-left-radius: 40px;
+        border-top-left-radius: 40px;
+        -moz-border-bottom-left-radius: 40px;
+        -webkit-border-bottom-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+        -moz-border-top-right-radius: 40px;
+        -webkit-border-top-right-radius: 40px;
+        border-top-right-radius: 40px;
+        -moz-border-bottom-right-radius: 40px;
+        -webkit-border-bottom-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+      }
+        .slider_top .text_section .btn_buy span{
+          display: inline-block;
+          width: 33px;
+          height: 24px;
+
+          background: url("images/ico_cart.png") 0 0 no-repeat;
+        }
+
     .slide_tooltip_price .small{
-      font-size: 25pt;
+      font-size: 25px;
     }
     .slide_tooltip_price span.only{
-      font-size: 50pt;
+      font-size: 50px;
       font-family: Karla-Italic, sans-serif;
     }
       .slide_tooltip_price span b{
         font-family: Karla-Bold, sans-serif;
       }
-    .slide_tooltip_price a{
-      display: inline-block;
-      margin-top: 15px;
-
-      text-transform: uppercase;
-      color: #fff;
-      background: #008efe;
-      padding: 20px 40px;
-
-      -moz-border-top-left-radius: 35px;
-      -webkit-border-top-left-radius: 35px;
-      border-top-left-radius: 35px;
-      -moz-border-bottom-left-radius: 35px;
-      -webkit-border-bottom-left-radius: 35px;
-      border-bottom-left-radius: 35px;
-      -moz-border-top-right-radius: 35px;
-      -webkit-border-top-right-radius: 35px;
-      border-top-right-radius: 35px;
-      -moz-border-bottom-right-radius: 35px;
-      -webkit-border-bottom-right-radius: 35px;
-      border-bottom-right-radius: 35px;
-    }
 
 /* promo images */
 .promo_images{
