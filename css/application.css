@@ -429,7 +429,26 @@ header .cart{
         -moz-border-bottom-right-radius: 40px;
         -webkit-border-bottom-right-radius: 40px;
         border-bottom-right-radius: 40px;
+
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        border: 2px solid #fff;
       }
+        .slider_top .text_section .btn_buy:hover{
+          background-color: #fff;
+          color: #008efe;
+          border: 2px solid #008efe;
+        }
+        .slider_top .text_section .btn_buy:hover span{
+          background: #000;
+          background: url("images/ico_cart_hover.png") 0 0 no-repeat;
+
+          -webkit-transition: all .3s ease-in-out;
+          -o-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+        }
+
         .slider_top .text_section .btn_buy span{
           display: inline-block;
           width: 33px;
@@ -682,14 +701,33 @@ header .cart{
     -moz-border-bottom-right-radius: 40px;
     -webkit-border-bottom-right-radius: 40px;
     border-bottom-right-radius: 40px;
+
+    border: 2px solid #fff;
+
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
   }
+    .feedback .order_btn:hover{
+      color: #008efd;
+      background: #fff;
+      border: 2px solid #008efd;
+    }
+    .feedback .order_btn:hover span{
+      background: url("images/ico_cart_hover.png") 0 0 no-repeat;      
+    }
     .feedback .order_btn span{
       display: inline-block;
       width: 33px;
       height: 24px;
 
       background: url("images/ico_cart.png") 0 0 no-repeat;
+
+      -webkit-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
     }
+
 
 /* about product */
 .about_product{
@@ -704,7 +742,7 @@ header .cart{
   #slideshow{
     list-style:none;
     width: 100% !important;
-    min-height: 500px;
+    min-height: 556px;
     overflow:hidden;
   }
     #slideshow li {
