@@ -418,13 +418,13 @@ header .cart{
     visibility: visible;
     opacity: 1;
     transition: visibility 0s, opacity 0.5s linear;
-        -webkit-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
     transition: all 1s ease; 
-      background: rgba(0,142,254,0.6);
-      z-index:9999;
+    background: rgba(0,142,254,0.6);
+    z-index:9999;
   }
 .promo_images .slogan p {
     font-family: Karla-Bold, sans-serif;
@@ -437,7 +437,7 @@ header .cart{
   .promo_images:hover .slogan{
     visibility: hidden;
     opacity: 0;
-        -webkit-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
